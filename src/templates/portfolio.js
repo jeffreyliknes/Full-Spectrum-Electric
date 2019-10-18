@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 import "../components/styles/portfolioStyle.scss";
 
 const FeaturedImage = styled.img`
-  width: 10%;
+  width: 30%;
 `;
 
 const ImageWrapper = styled.div`
