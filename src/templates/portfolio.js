@@ -65,14 +65,3 @@ export default ({ data, pageContext }) => (
   </Layout>
 );
 
-// export const query = graphql`
-//   query {
-//     file(relativePath: { eq: "gatsby-astronaut.png" }) {
-//       childImageSharp {
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `;

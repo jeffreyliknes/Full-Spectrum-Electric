@@ -1,12 +1,9 @@
-.SpecLogo {
-    background-image: url(../../images/unnamed.jpg);
-    
-}
-
-.DesignbyJeffLogo {
-    background-image: url(../../images/unnamed.jpg);
-}
-
-.footerWrapper {
-    height: 80vh;
+.gatsby-image-wrapper {
+    height: 30vh;
+    picture {
+        img {
+            width: 50% !important;
+            object-fit: contain !important;
+        }
+    }
 }
