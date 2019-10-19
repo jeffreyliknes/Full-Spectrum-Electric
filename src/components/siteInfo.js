@@ -21,8 +21,8 @@ const SiteInfoWrapper = styled.div`
 
   @media (max-width: 775px) {
     font-size: 1rem;
-    left: -4rem;
-    top: 15%;
+    left: -5rem;
+    top: 23%;
   }
 `;
 
