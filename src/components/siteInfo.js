@@ -6,13 +6,13 @@ const SiteInfoWrapper = styled.div`
   flex-grow: 1;
   color: black;
   margin: auto 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: fixed;
   transform: rotate(90deg);
   left: -7rem;
   font-family: 'Raleway', sans-serif;
 
-  top: 20%;
+  top: 30%;
   z-index: 30;
   letter-spacing: 4px;
   @media (max-width: 750px) {
