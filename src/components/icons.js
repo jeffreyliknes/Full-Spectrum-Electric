@@ -44,7 +44,7 @@ const JustifyCenterGrid = styled.div`
   text-align: center;
   a {
       text-decoration: none;
-      color: 
+      color: green;
   }
 `;
 
