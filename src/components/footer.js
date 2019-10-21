@@ -8,6 +8,7 @@ const FooterWrapper = styled.div`
   display: flex;
   padding: 1rem;
   height: 35vh;
+  margin-top: 3rem;
 `;
 
 const SetImg = styled(Img)`
@@ -39,6 +40,7 @@ const Footer = () => {
 
   return (
     <section>
+      <div class="footerBreak" />
       <FooterWrapper>
         <SetImg fluid={data.imageSpec.childImageSharp.fixed} />
         <a href="mailto:fullspectrumnelson@gmail.com?subject=Full Spectrum Project">

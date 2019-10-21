@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "../components/footer";
 import { Link } from "gatsby";
 import { HomeAlt } from "styled-icons/boxicons-regular/HomeAlt";
 import { Lightbulb } from "styled-icons/fa-regular/Lightbulb";
@@ -43,8 +44,8 @@ const JustifyCenterGrid = styled.div`
   grid-gap: 3rem;
   text-align: center;
   a {
-      text-decoration: none;
-      color: green;
+    text-decoration: none;
+    color: black;
   }
 `;
 
@@ -78,6 +79,7 @@ const Icon = () => {
           <h3>Renewable Energy</h3>
         </Link>
       </JustifyCenterGrid>
+      <Footer />
     </div>
   );
 };
