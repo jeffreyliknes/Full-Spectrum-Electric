@@ -10,14 +10,12 @@ import "../components/styles/portfolioStyle.scss";
 
 const FeaturedImage = styled.img`
   width: 30%;
+  
 `;
 
 const ImageWrapper = styled.div`
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0;
-  width: 40vw;
-  height: 100vh; */
+ display: flex;
+ flex-direction: row;
 `;
 
 const ImageRows = styled.div`
@@ -36,15 +34,29 @@ const ImageRows = styled.div`
 
 const PortfolioGrid = styled.div`
   display: flex;
-  
+`;
+
+const ServiceInfo = styled.div`
+color: green;
+font-size: 1.5rem;
+`;
+
+const LineBreak = styled.div`
+  width: 78%;
+  height: 100px;
+  border-top: 1px solid black;
+  word-break: break-all;
+  margin: 0 auto;
+  margin-top: 5rem;
 `;
 
 export default ({ data, pageContext }) => (
   <Layout>
     <Logo className="portfolioLogo" />
     <h1>{pageContext.title}</h1>
+    <LineBreak />
     <ElectricalBoard />
-  
+
     <ImageWrapper>
       {/* <a
         href={pageContext.acf.portfolio_url}
@@ -53,7 +65,7 @@ export default ({ data, pageContext }) => (
       >
         {pageContext.acf.portfolio_url}
       </a> */}
-
+      <ServiceInfo>We guarantee that your electrical job will be completed with the utmost quality and timeliness. We don’t stop there, Full Spectrum offers very competitive pricing. Full Spectrum will in most cases give you a detailed price on the spot at no cost or obligation. For more information about Full Spectrum and the services offered contact us.</ServiceInfo>
       <FeaturedImage src={pageContext.featured_media.source_url} />
     </ImageWrapper>
     <ImageRows>
@@ -64,4 +76,3 @@ export default ({ data, pageContext }) => (
     <Footer />
   </Layout>
 );
-

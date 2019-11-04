@@ -7,33 +7,43 @@ import { Lightbulb } from "styled-icons/fa-regular/Lightbulb";
 import { Hammer } from "styled-icons/fa-solid/Hammer";
 import { SolarPanel } from "styled-icons/fa-solid/SolarPanel";
 
-// const IconWrapper = styled.div`
-//   width: 40%;
-//   display: flex;
-//   flex-grow: 1;
-//   justify-content: space-around;
-//   width: 100%;
-// `;
+
 
 const GoldHome = styled(HomeAlt)`
   color: darkorange;
   flex-grow: 1;
   width: 30%;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+      color: lightgreen;
+  }
 `;
 const GoldLightbulb = styled(Lightbulb)`
   color: darkorange;
   flex-grow: 1;
   width: 22%;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+      color: lightgreen;
+  }
 `;
 const GoldHammer = styled(Hammer)`
   color: darkorange;
   flex-grow: 1;
   width: 30%;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+      color: lightgreen;
+  }
 `;
 const GoldSolarPanel = styled(SolarPanel)`
   color: darkorange;
   flex-grow: 1;
   width: 30%;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+      color: lightgreen;
+  }
 `;
 
 const JustifyCenterGrid = styled.div`

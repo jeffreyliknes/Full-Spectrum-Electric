@@ -4,6 +4,14 @@ import "../components/styles/contentStyle.scss";
 import styled from 'styled-components';
 import "../components/styles/mapLayout.scss";
 
+const LineBreak = styled.div`
+  width: 78%;
+  height: 100px;
+  border-top: 1px solid black;
+  word-break: break-all;
+  margin: 0 auto;
+  margin-top: 5rem;
+`;
 
 const FeaturedImage = styled.img`
   max-width: 300px;
@@ -24,6 +32,7 @@ justify-content: center;
 export default ({ pageContext, data }) => (
   <NewLayout className="map">
     <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
+    <LineBreak />
     <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
 
     <FeaturedLogo>
