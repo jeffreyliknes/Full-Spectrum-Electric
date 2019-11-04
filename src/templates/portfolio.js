@@ -10,7 +10,7 @@ import "../components/styles/portfolioStyle.scss";
 import Zoom from "react-reveal/Zoom";
 
 const FeaturedImage = styled.img`
-  min-width: 50%;
+  max-width: 50%;
   object-fit: cover;
 `;
 
