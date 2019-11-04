@@ -6,6 +6,7 @@ import BackgroundImage from "../components/homeImage";
 import styled from "styled-components";
 import SiteInfo from "../components/siteInfo";
 import Icons from "../components/icons";
+import Fade from "react-reveal/Fade";
 
 const LineBreak = styled.div`
   width: 78%;
@@ -18,14 +19,16 @@ const LineBreak = styled.div`
 
 export default ({ pageContext, data }) => (
   <Layout>
-    <SiteInfo />
-    <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
-    <LineBreak />
-    <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+      <SiteInfo />
+      <BackgroundImage />
+    <Fade bottom>
+      <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
+      <LineBreak />
+      <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
 
-    <BackgroundImage />
-    <div>
-      <Icons />
-    </div>
+      <div>
+        <Icons />
+      </div>
+    </Fade>
   </Layout>
 );

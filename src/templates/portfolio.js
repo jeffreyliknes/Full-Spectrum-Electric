@@ -7,15 +7,16 @@ import "../components/styles/portfolioImage.scss";
 import Logo from "../components/logo";
 import Footer from "../components/footer";
 import "../components/styles/portfolioStyle.scss";
+import Zoom from "react-reveal/Zoom";
 
 const FeaturedImage = styled.img`
-  width: 30%;
-  
+  min-width: 50%;
+  object-fit: cover;
 `;
 
 const ImageWrapper = styled.div`
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 `;
 
 const ImageRows = styled.div`
@@ -37,8 +38,8 @@ const PortfolioGrid = styled.div`
 `;
 
 const ServiceInfo = styled.div`
-color: green;
-font-size: 1.5rem;
+  color: green;
+  font-size: 1.5rem;
 `;
 
 const LineBreak = styled.div`
@@ -53,7 +54,9 @@ const LineBreak = styled.div`
 export default ({ data, pageContext }) => (
   <Layout>
     <Logo className="portfolioLogo" />
-    <h1>{pageContext.title}</h1>
+    <Zoom>
+      <h1>{pageContext.title}</h1>
+    </Zoom>
     <LineBreak />
     <ElectricalBoard />
 
@@ -65,7 +68,13 @@ export default ({ data, pageContext }) => (
       >
         {pageContext.acf.portfolio_url}
       </a> */}
-      <ServiceInfo>We guarantee that your electrical job will be completed with the utmost quality and timeliness. We don’t stop there, Full Spectrum offers very competitive pricing. Full Spectrum will in most cases give you a detailed price on the spot at no cost or obligation. For more information about Full Spectrum and the services offered contact us.</ServiceInfo>
+      <ServiceInfo>
+        We guarantee that your electrical job will be completed with the utmost
+        quality and timeliness. We don’t stop there, Full Spectrum offers very
+        competitive pricing. Full Spectrum will in most cases give you a
+        detailed price on the spot at no cost or obligation. For more
+        information about Full Spectrum and the services offered contact us.
+      </ServiceInfo>
       <FeaturedImage src={pageContext.featured_media.source_url} />
     </ImageWrapper>
     <ImageRows>
