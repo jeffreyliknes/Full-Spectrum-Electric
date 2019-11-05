@@ -5,6 +5,9 @@ import styled from "styled-components";
 const PortfolioItemsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 550px) {
+    display: block;
+  }
 `;
 
 const PortfolioItem = styled.div`
