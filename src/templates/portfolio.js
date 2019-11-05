@@ -25,7 +25,7 @@ const ImageRows = styled.div`
   background-color: white;
   padding: 2rem 0rem 2rem 3rem;
   margin-left: calc(-40vw - 3rem);
-  margin-top: 15rem;
+  margin-top: 9rem;
   z-index: 10;
   @media only screen and (max-width: 750px) {
     margin-left: 0;
@@ -38,7 +38,6 @@ const PortfolioGrid = styled.div`
 `;
 
 const ServiceInfo = styled.div`
-  color: green;
   font-size: 1.5rem;
 `;
 
