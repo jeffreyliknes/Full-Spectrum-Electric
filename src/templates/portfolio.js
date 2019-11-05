@@ -17,6 +17,9 @@ const FeaturedImage = styled.img`
 const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 750px) {
+ flex-direction: column;
+  }
 `;
 
 const ImageRows = styled.div`
@@ -38,7 +41,8 @@ const PortfolioGrid = styled.div`
 `;
 
 const ServiceInfo = styled.div`
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem;
 `;
 
 const LineBreak = styled.div`
