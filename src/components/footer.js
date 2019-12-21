@@ -2,24 +2,7 @@ import React from "react";
 // import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 import "../components/styles/footerStyle.scss";
-// import Img from "gatsby-image";
 
-// Icons import
-// import { Lightbulb } from "styled-icons/fa-regular/Lightbulb";
-// import { Hammer } from "styled-icons/fa-solid/Hammer";
-// import { Mail } from "styled-icons/feather/Mail";
-
-// const FooterWrapper = styled.div`
-//   display: flex;
-//   padding: 1rem;
-//   height: 35vh;
-//   margin-top: 3rem;
-// `;
-
-// const SetImg = styled(Img)`
-//   flex-grow: 1;
-//   /* padding: 1rem; */
-// `;
 
 const DesignbyJeff = styled.div`
   display: flex;
