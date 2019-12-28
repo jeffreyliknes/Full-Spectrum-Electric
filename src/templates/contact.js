@@ -36,7 +36,7 @@ export default ({ pageContext, data }) => (
       <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
       <LineBreak />
     </Fade>
-      <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+    <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
 
     <FeaturedLogo>
       <FeaturedImage src={pageContext.featured_media.source_url} />
