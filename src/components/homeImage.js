@@ -21,7 +21,7 @@ const BackgroundSection = ({ Astro }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "christian-dubovan-gxsRL8B_ZqE-unsplash.jpg" }) {
+        desktop: file(relativePath: { eq: "casey-horner-4rDCa5hBlCs-unsplash.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp

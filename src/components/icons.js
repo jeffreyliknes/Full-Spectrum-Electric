@@ -7,15 +7,13 @@ import { Lightbulb } from "styled-icons/fa-regular/Lightbulb";
 import { Hammer } from "styled-icons/fa-solid/Hammer";
 import { SolarPanel } from "styled-icons/fa-solid/SolarPanel";
 
-
-
 const GoldHome = styled(HomeAlt)`
   color: darkorange;
   flex-grow: 1;
   width: 30%;
   transition: color 0.3s ease-in-out;
   &:hover {
-      color: lightgreen;
+    color: lightgreen;
   }
 `;
 const GoldLightbulb = styled(Lightbulb)`
@@ -24,7 +22,7 @@ const GoldLightbulb = styled(Lightbulb)`
   width: 22%;
   transition: color 0.3s ease-in-out;
   &:hover {
-      color: lightgreen;
+    color: lightgreen;
   }
 `;
 const GoldHammer = styled(Hammer)`
@@ -33,7 +31,7 @@ const GoldHammer = styled(Hammer)`
   width: 30%;
   transition: color 0.3s ease-in-out;
   &:hover {
-      color: lightgreen;
+    color: lightgreen;
   }
 `;
 const GoldSolarPanel = styled(SolarPanel)`
@@ -42,7 +40,7 @@ const GoldSolarPanel = styled(SolarPanel)`
   width: 30%;
   transition: color 0.3s ease-in-out;
   &:hover {
-      color: lightgreen;
+    color: lightgreen;
   }
 `;
 
@@ -53,15 +51,20 @@ const JustifyCenterGrid = styled.div`
   justify-items: center;
   grid-gap: 3rem;
   text-align: center;
+
   a {
     text-decoration: none;
     color: black;
   }
 `;
 
+const IconWrapper = styled.div`
+  padding-top: 4rem;
+`;
+
 const Icon = () => {
   return (
-    <div>
+    <IconWrapper>
       <h2>Services</h2>
       <JustifyCenterGrid>
         <Link to="/services">
@@ -90,7 +93,7 @@ const Icon = () => {
         </Link>
       </JustifyCenterGrid>
       <Footer />
-    </div>
+    </IconWrapper>
   );
 };
 

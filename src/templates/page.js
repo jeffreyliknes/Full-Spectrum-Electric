@@ -7,6 +7,8 @@ import styled from "styled-components";
 import SiteInfo from "../components/siteInfo";
 import Icons from "../components/icons";
 import Fade from "react-reveal/Fade";
+import "../components/styles/homePageStyle.scss";
+
 
 const LineBreak = styled.div`
   width: 78%;

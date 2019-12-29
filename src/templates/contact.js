@@ -4,6 +4,7 @@ import "../components/styles/contentStyle.scss";
 import styled from "styled-components";
 import "../components/styles/mapLayout.scss";
 import Fade from "react-reveal/Fade";
+import "../components/styles/contactStyle.scss";
 
 const LineBreak = styled.div`
   width: 78%;
@@ -28,6 +29,7 @@ const NewLayout = styled(Layout)`
 const FeaturedLogo = styled.div`
   display: flex;
   justify-content: center;
+  max-height: 550px;
 `;
 
 export default ({ pageContext, data }) => (

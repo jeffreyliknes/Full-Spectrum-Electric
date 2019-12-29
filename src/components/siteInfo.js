@@ -10,7 +10,9 @@ const SiteInfoWrapper = styled.div`
   position: fixed;
   transform: rotate(90deg);
   left: -7rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  opacity: 0.8;
 
   top: 30%;
   z-index: 30;
