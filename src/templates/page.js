@@ -20,9 +20,11 @@ const LineBreak = styled.div`
 `;
 
 export default ({ pageContext, data }) => (
+
+  
   <Layout>
-      <SiteInfo />
-      <BackgroundImage />
+    <SiteInfo />
+    <BackgroundImage />
     <Fade bottom>
       <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
       <LineBreak />
@@ -34,3 +36,5 @@ export default ({ pageContext, data }) => (
     </Fade>
   </Layout>
 );
+
+/* <Carousel /> */
