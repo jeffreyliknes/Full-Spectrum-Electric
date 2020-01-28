@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 7;
    
   }
+
+  img{
+    border-radius: 15px;
+  }
 `;
 
 const LayoutWrapper = styled.div`
