@@ -20,6 +20,7 @@ const FeaturedImage = styled.img`
   max-width: 300px;
   margin: 16px 0;
   padding-top: 5rem;
+  border-radius: 1px !important;
 `;
 
 const NewLayout = styled(Layout)`
@@ -30,7 +31,7 @@ const NewLayout = styled(Layout)`
 const FeaturedLogo = styled.div`
   display: flex;
   justify-content: center;
-  max-height: 550px;
+  max-height: 250px;
 `;
 
 export default ({ pageContext, data }) => (
@@ -40,10 +41,9 @@ export default ({ pageContext, data }) => (
       <LineBreak />
     </Fade>
     <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-
-    <FeaturedLogo>
       <FeaturedImage src={pageContext.featured_media.source_url} />
-    </FeaturedLogo>
+    <FeaturedLogo />
+
     <Footer />
   </NewLayout>
 );
