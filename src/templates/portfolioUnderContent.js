@@ -5,6 +5,7 @@ import PortfolioImage from "../components/portfolioImage";
 import "../components/styles/siteInfoStyle.scss";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import Footer from "../components/footer";
 
 const LineBreak = styled.div`
   width: 78%;
@@ -26,5 +27,6 @@ export default ({ pageContext }) => (
 
       <PortfolioItems />
     </Fade>
+    <Footer />
   </Layout>
 );

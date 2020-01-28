@@ -12,14 +12,13 @@ const PortfolioItemsWrapper = styled.div`
 
 const PortfolioItem = styled.div`
   width: 60%;
-  
-
   border: 3px solid lightblue;
   padding: 16px;
   margin: 16px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  width: 70%;
   &:hover {
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
   }
@@ -29,24 +28,20 @@ const PortfolioImage = styled.img`
 `;
 
 const ButtonStyle = styled(Link)`
-@import url("https://fonts.googleapis.com/css?family=Raleway:800,900&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Raleway:800,900&display=swap");
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   color: white;
-font-size: 1rem;
-border: 1px #ef6f6c solid;
-border-radius: 15px;
-padding: 10px 10px;
-text-decoration: none;
-background-color: #ef6f6c;
-display: flex;
-    /* margin: 0 auto; */
-    justify-content: center;
+  font-size: 1rem;
+  border: 1px #ef6f6c solid;
+  border-radius: 15px;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: #ef6f6c;
+  display: flex;
+  /* margin: 0 auto; */
+  justify-content: center;
 `;
-
-
-
-
 
 const PortfolioItems = () => {
   return (
@@ -73,11 +68,11 @@ const PortfolioItems = () => {
         <PortfolioItemsWrapper>
           {props.allWordpressWpPortfolio.edges.map(portfolioItem => (
             <PortfolioItem key={portfolioItem.node.id}>
-              <h2>{portfolioItem.node.title}</h2>
               <PortfolioImage
                 src={portfolioItem.node.featured_media.source_url}
                 alt="Thumnail"
               />
+              <h2>{portfolioItem.node.title}</h2>
               <div
                 dangerouslySetInnerHTML={{
                   __html: portfolioItem.node.excerpt

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import "../components/styles/mapLayout.scss";
 import Fade from "react-reveal/Fade";
 import "../components/styles/contactStyle.scss";
+import Footer from "../components/footer";
 
 const LineBreak = styled.div`
   width: 78%;
@@ -43,5 +44,6 @@ export default ({ pageContext, data }) => (
     <FeaturedLogo>
       <FeaturedImage src={pageContext.featured_media.source_url} />
     </FeaturedLogo>
+    <Footer />
   </NewLayout>
 );

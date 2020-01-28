@@ -9,7 +9,6 @@ import Icons from "../components/icons";
 import Fade from "react-reveal/Fade";
 import "../components/styles/homePageStyle.scss";
 
-
 const LineBreak = styled.div`
   width: 78%;
   height: 100px;
@@ -20,8 +19,6 @@ const LineBreak = styled.div`
 `;
 
 export default ({ pageContext, data }) => (
-
-  
   <Layout>
     <SiteInfo />
     <BackgroundImage />
@@ -37,4 +34,4 @@ export default ({ pageContext, data }) => (
   </Layout>
 );
 
-/* <Carousel /> */
+
