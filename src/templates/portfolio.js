@@ -18,7 +18,7 @@ const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
   @media (max-width: 750px) {
- flex-direction: column;
+    flex-direction: column;
   }
 `;
 
@@ -43,6 +43,9 @@ const PortfolioGrid = styled.div`
 const ServiceInfo = styled.div`
   font-size: 1rem;
   padding: 1rem;
+  border-left: lightblue solid;
+  height: 100%;
+  margin: auto 0;
 `;
 
 const LineBreak = styled.div`

@@ -1,4 +1,5 @@
-.logo__SiteLogoWrapper-LUXPN, .logo__SiteLogoWrapper-sc-1gco7ve-0 {
+.logo__SiteLogoWrapper-LUXPN,
+.logo__SiteLogoWrapper-sc-1gco7ve-0 {
   position: fixed;
   top: 20rem;
   left: 5rem;
@@ -15,6 +16,8 @@
   }
 }
 
+
+
 .portfolio__ImageWrapper-bhNTYP {
   padding-top: 2rem;
   img {
@@ -24,18 +27,19 @@
   }
 }
 
-
-.portfolio__PortfolioGrid-kldKyW, .portfolio__PortfolioGrid-sc-96spiz-3, .portfolio__PortfolioGrid-eWtgs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    p {
-        border: 1px solid lightgray;
-        padding: 3rem;
-    }
-    figure, p {
-        width: 35%;
-
-    }
+.portfolio__PortfolioGrid-kldKyW,
+.portfolio__PortfolioGrid-sc-96spiz-3,
+.portfolio__PortfolioGrid-eWtgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    border: 1px solid lightgray;
+    padding: 3rem;
+  }
+  figure,
+  p {
+    width: 35%;
+  }
 }
